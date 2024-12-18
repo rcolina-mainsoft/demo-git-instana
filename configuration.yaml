@@ -1,0 +1,16 @@
+# Host
+# Instana will by default only monitor local filesystems. It is possible to
+# explicitly list the remote filesystems that shall be monitored.
+# The name for the config setting is the device name, that is the first column
+# in mtab / df
+com.instana.plugin.host:
+  tags:
+    - 'App=Tomcat'
+    - 'Ambiente=PRD'
+
+  filesystems:
+#    - 'server:/usr/local/pub'
+#    - 'tmpfs:/mount/point/path'
+#  collectInstalledSoftware: true # [true, false]
+#  collectSystemId: false
+#  aixEventsPollRate: 900 # (Optional) Only for AIX systems. Setting a value to 900 seconds or larger will enable error report event collection and removing it will stop it.
